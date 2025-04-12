@@ -21,11 +21,10 @@ export default function Home({ list }: HomePageProps) {
     <div>status: 
       <span className="font-bold">{status}</span>
     </div>
-    <button onClick={makeRequest} className="bg-red-400 rounded-2xl px-2 cursor-pointer">Make request</button>
+    <button onClick={makeRequest} className="bg-red-400 rounded-2xl px-2 cursor-pointer text-white">Make request</button>
     {data && <img src={data.message} alt="" width={50} height={50} />}
     {list && list.message.map(image => <div className="flex flex-wrap">
       <img src={image} alt="" width={50} height={50} />
-
     </div>)}
   </div>
 }
