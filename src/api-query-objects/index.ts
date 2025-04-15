@@ -1,4 +1,4 @@
-import { createServerNextArchitecture, createClientNextArchitecture, ApiEndpoint } from "@caucolum/api-query-object";
+import { ApiEndpoint, createClientNextArchitecture, createServerNextArchitecture } from "@/test";
 
 export interface BreedsImageRandomDataProps {
     message: string;
