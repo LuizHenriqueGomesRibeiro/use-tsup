@@ -14,7 +14,7 @@ interface HomePageProps {
   list: BreedHoundImagesDataProps
 }
 
-export default function Home({ list }: HomePageProps) {
+const Home = ({ list }: HomePageProps) => {
   const { makeRequest, data, status } = clientQueriesObject.breeds_image_random();
   return <div>
     <div>hello use-tsup</div>
@@ -28,3 +28,5 @@ export default function Home({ list }: HomePageProps) {
     </div>)}
   </div>
 }
+
+export default Home;
